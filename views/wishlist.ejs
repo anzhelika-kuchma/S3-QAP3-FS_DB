@@ -1,0 +1,31 @@
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+    <body>
+        <%- include('./partials/nav.ejs') %>
+        <div class="wishlist content">
+            <form action="/wishlist" method="POST">
+                <b>Wishlist: </b></br> 
+            <% if (theWishlist.length > 0) { %>
+                <% theWishlist.forEach(item => { %>
+                    <b><%= item.destination %></b>
+                    <a href="/wishlist/<%=item.id%>/edit?destination=<%=item.destination%>&country=<%=item.destination%>">edit</a>
+                    <a href="/wishlist/<%=item.id%>/delete?destination=<%=item.destination%>">delete</a></br> 
+                    <% }) %>
+            <% } %>
+            </br><label>Add Destination:</label></br>
+            <label>Title:
+                <input type="text" id="title" name="title" value="<%= locals.title %>" required>
+            </label>
+            <label>Country:
+                <input type="text" id="country" name="country" value="<%= locals.country %>" required>
+            </label>
+            <label>City:
+                <input type="text" id="city" name="city" value="<%= locals.city %>" required>
+            </label>
+            </br>
+            <button>POST</button>
+        </form>
+        </div>
+    </body>
+    <%- include('./partials/foot.ejs') %>
+</html>
