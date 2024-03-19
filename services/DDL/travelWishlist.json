@@ -1,0 +1,80 @@
+[
+    {
+      "id": 1,
+      "country": "Italy",
+      "city": "Rome",
+      "destination": "Colosseum"
+    },
+    {
+      "id": 2,
+      "country": "Japan",
+      "city": "Tokyo",
+      "destination": "Mount Fuji"
+    },
+    {
+      "id": 3,
+      "country": "France",
+      "city": "Paris",
+      "destination": "Eiffel Tower"
+    },
+    {
+      "id": 4,
+      "country": "USA",
+      "city": "New York",
+      "destination": "Statue of Liberty"
+    },
+    {
+      "id": 5,
+      "country": "Australia",
+      "city": "Sydney",
+      "destination": "Sydney Opera House"
+    },
+    {
+      "id": 6,
+      "country": "Greece",
+      "city": "Athens",
+      "destination": "Acropolis"
+    },
+    {
+      "id": 7,
+      "country": "Egypt",
+      "city": "Cairo",
+      "destination": "Pyramids of Giza"
+    },
+    {
+      "id": 8,
+      "country": "Brazil",
+      "city": "Rio de Janeiro",
+      "destination": "Christ the Redeemer"
+    },
+    {
+      "id": 9,
+      "country": "India",
+      "city": "Agra",
+      "destination": "Taj Mahal"
+    },
+    {
+      "id": 11,
+      "country": "Thailand",
+      "city": "Bangkok",
+      "destination": "Grand Palace"
+    },
+    {
+      "id": 12,
+      "country": "China",
+      "city": "Beijing",
+      "destination": "Great Wall of China"
+    },
+    {
+      "id": 13,
+      "country": "United Kingdom",
+      "city": "London",
+      "destination": "Tower of London"
+    },
+    {
+      "id": 14,
+      "country": "South Africa",
+      "city": "Cape Town",
+      "destination": "Table Mountain"
+    }
+  ]
