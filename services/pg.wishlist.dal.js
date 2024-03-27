@@ -16,7 +16,20 @@ var getDestinations = function () {
   });
 };
 
+async function getDestById(id) {
+  if (DEBUG) console.log("pg.wishlist.dal.getDestById()");
+  const sql = `SELECT id, destination, city, country FROM public."Travel-Wishlist" WHERE id = $1;`;
+  try {
+    let result = await dal.query(sql, [id]);
+    return result.rows[0];
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+}
+
 
 module.exports = {
-    getDestinations
+    getDestinations,
+    getDestById,
 };

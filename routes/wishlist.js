@@ -12,4 +12,18 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/:id", async (req, res) => {
+  try {
+    let aSong = await wishlistDal.getDestById(req.params.id);
+    if (aSong === undefined) {
+      res.render("norecord");
+    } else {
+      if (DEBUG) console.table(aDest);
+      res.render("destination", { aDest });
+    }
+  } catch (err) {
+    res.render("503");
+  }
+});
+
 module.exports = router;

@@ -4,7 +4,7 @@
         <%- include('./partials/nav.ejs') %>
         <div class="wishlist content">
             <form action="/wishlist" method="POST">
-                <b>Wishlist: </b></br> 
+                <u><b>Your Travel Wishlist: </b></u></br><br> 
             <% if (theWishlist.length > 0) { %>
                 <% theWishlist.forEach(item => { %>
                     <b><%= item.destination %></b>
