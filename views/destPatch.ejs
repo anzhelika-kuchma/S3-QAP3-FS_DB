@@ -1,0 +1,17 @@
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+    <body>
+        <%- include('./partials/nav.ejs') %>
+        <div class="edit content">
+            <form action="/wishlist/<%= locals.theId %>?_method=PATCH" method="POST">
+                <label>Edit Fields:</br>
+                    <input type="text" name="destination" value="<%= locals.destination %>" required>
+                    <input type="text" name="country" value="<%= locals.country %>" required>
+                    <input type="text" name="city" value="<%= locals.city %>" required>
+                </label></br>
+                <button>PATCH</button>
+            </form>
+        </div>
+    </body>
+    <%- include('./partials/foot.ejs') %>
+</html>

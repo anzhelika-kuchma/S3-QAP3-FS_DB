@@ -8,7 +8,7 @@
             <% if (theWishlist.length > 0) { %>
                 <% theWishlist.forEach(item => { %>
                     <b><%= item.destination %></b>
-                    <a href="/wishlist/<%=item.id%>/edit?destination=<%=item.destination%>&country=<%=item.destination%>">edit</a>
+                    <a href="/wishlist/<%=item.id%>/edit?destination=<%=item.destination%>&country=<%=item.country%>&city=<%=item.city%>">edit</a>
                     <a href="/wishlist/<%=item.id%>/delete?destination=<%=item.destination%>">delete</a></br> 
                     <% }) %>
             <% } %>
