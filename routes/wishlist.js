@@ -26,4 +26,19 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+router.post("/", async (req, res) => {
+  if (DEBUG) console.log("wishlist.POST");
+  try {
+    await wishlistDal.addDest(
+      req.body.destination,
+      req.body.city,
+      req.body.country
+    );
+    res.redirect("/wishlist/");
+  } catch (err) {
+    // if (DEBUG) console.log(err);
+    res.render("503");
+  }
+});
+
 module.exports = router;
